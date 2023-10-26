@@ -1,0 +1,32 @@
+.text-gradient{
+    font-weight: 900;
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    animation: bg-animation 5s infinite alternate;
+}
+.color-gradient{
+    font-weight: 700;
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+}
+.btn-gradient{
+    color: white;
+    background-image: var(--gradient);
+    background-size: 300%;
+    background-position: left;
+}
+.btn-gradient:hover{
+    background-position: right;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
