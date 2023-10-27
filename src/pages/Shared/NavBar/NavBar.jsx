@@ -1,6 +1,5 @@
 import React from 'react';
-import './NavBar.css'
-import Button from '../../../components/Button/Button';
+import './NavBar.css';
 import ActiveLink from '../../../components/ActiveLink/ActiveLink';
 import { Link } from 'react-router-dom';
 
@@ -32,7 +31,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end hidden lg:inline-flex">
-                <Button>Start Applying</Button>   
+                <button className="btn normal-case btn-gradient active:scale-95 border-none text-xs lg:text-lg">Start Applying</button>   
             </div>
         </div>
     );

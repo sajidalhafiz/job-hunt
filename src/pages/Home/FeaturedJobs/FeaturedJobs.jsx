@@ -4,6 +4,8 @@ import Job from '../Job/Job';
 
 const FeaturedJobs = () => {
 
+    const [isShow, setIsShow] = useState(true);
+
     const [jobs, setJobs] = useState([]);
     useEffect(() => {
         fetch('jobs.json')
@@ -11,6 +13,7 @@ const FeaturedJobs = () => {
             .then(data => setJobs(data));
     }, []);
 
+    
     return (
         <div className='w-full lg:w-9/12 mx-auto px-4 lg:px-0 pb-24'>
             <SectionTitle
@@ -19,12 +22,13 @@ const FeaturedJobs = () => {
             </SectionTitle>
             <div className='grid grid-cols-1 lg:grid-cols-2'>
                 {
-                    jobs.slice(0, 4).map(job => <Job
+                    jobs.slice(0, isShow ? 4 : jobs.length).map(job => <Job
                         key={job.id}
                         job={job}
                     ></Job>)
                 }
             </div>
+            {isShow && <div className='text-center my-10 lg:my-20'><button onClick={() => setIsShow(false)} className="btn normal-case btn-gradient active:scale-95 border-none text-xs lg:text-lg">See All Jobs</button></div>}
         </div>
     );
 };

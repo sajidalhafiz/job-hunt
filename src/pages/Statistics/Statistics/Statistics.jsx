@@ -1,9 +1,10 @@
 import React from 'react';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 const Statistics = () => {
     return (
         <div>
-            <h2>Stats</h2>
+            <PageTitle>Statistics</PageTitle>
         </div>
     );
 };
