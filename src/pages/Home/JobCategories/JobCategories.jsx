@@ -13,7 +13,10 @@ const JobCategories = () => {
 
     return (
         <div className='w-full p-0 lg:w-9/12 mx-auto px-4 lg:px-0 my-32'>
-            <SectionTitle />
+            <SectionTitle
+                title='Job Category List'
+                subTitle='Explore thousands of job opportunities with all the information you need. Its your future'>
+            </SectionTitle>
             <div className='grid grid-cols-1 lg:grid-cols-4 gap-6 mt-16'>
                 {
                     categories.map(category => <JobCategory
