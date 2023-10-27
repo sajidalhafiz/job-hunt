@@ -6,9 +6,11 @@ import NavBar from '../pages/Shared/NavBar/NavBar';
 const Main = () => {
     return (
         <>
-            <NavBar/>
-            <Outlet/>
-            <Footer/>
+            <div className=''>
+                <NavBar />
+                <Outlet />
+            </div>
+            <Footer />
         </>
     );
 };

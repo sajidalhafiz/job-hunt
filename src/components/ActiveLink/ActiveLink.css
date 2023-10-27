@@ -1,0 +1,8 @@
+.active{
+    font-weight: 700;
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    animation: bg-animation 5s infinite alternate;
+}

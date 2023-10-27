@@ -6,7 +6,7 @@ import { router } from './Routes/Routes';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className='font-manrope'>
+    <div className='font-manrope bg-white'>
       <RouterProvider router={router} />
     </div>
   </React.StrictMode>,

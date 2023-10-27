@@ -6,11 +6,10 @@
     background-size: 300%;
     animation: bg-animation 5s infinite alternate;
 }
-.color-gradient{
-    font-weight: 700;
+.bg-gradient{
     background-image: var(--gradient);
-    background-clip: text;
-    color: transparent;
+    background-size: 300%;
+    animation: bg-animation 5s infinite alternate;
 }
 .btn-gradient{
     color: white;

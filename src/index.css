@@ -3,11 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    --gradient: linear-gradient(
-        45deg,
-        #7E90FE,
-        #7ecdfe,
-        #9873FF
-    );
+:root {
+    --gradient: linear-gradient(45deg, #7E90FE, #7ecdfe, #9873FF);
+}
+
+#root {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: white;
 }
