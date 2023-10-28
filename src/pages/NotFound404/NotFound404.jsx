@@ -2,6 +2,9 @@ import React from 'react';
 import PageTitle from '../Shared/PageTitle/PageTitle';
 
 const NotFound404 = () => {
+
+    document.title = 'Job Hunt - 404 Not Found';
+
     return (
         <div>
             <PageTitle>

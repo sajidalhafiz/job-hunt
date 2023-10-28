@@ -4,12 +4,12 @@
     background-clip: text;
     color: transparent;
     background-size: 300%;
-    animation: bg-animation 5s infinite alternate;
+    animation: bg-animation 10s infinite alternate;
 }
 .bg-gradient{
     background-image: var(--gradient);
     background-size: 300%;
-    animation: bg-animation 5s infinite alternate;
+    animation: bg-animation 10s infinite alternate;
 }
 .btn-gradient{
     color: white;

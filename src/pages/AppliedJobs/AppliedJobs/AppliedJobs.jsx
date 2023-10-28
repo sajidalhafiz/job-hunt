@@ -5,6 +5,8 @@ import { getJobs } from '../../../utilities/fakedb';
 
 const AppliedJobs = () => {
 
+    document.title = 'Job Hunt - Applied Jobs';
+
     const [filterBy, setFilterBy] = useState('');
 
     const [jobs, setJobs] = useState([]);

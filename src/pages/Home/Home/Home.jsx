@@ -4,6 +4,7 @@ import JobCategories from '../JobCategories/JobCategories';
 import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
 
 const Home = () => {
+    document.title = 'Job Hunt - Home';
     return (
         <div>
             <Banner/>

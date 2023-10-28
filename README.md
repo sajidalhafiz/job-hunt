@@ -1,8 +1,19 @@
-# Job Hunt
+# Title: Job Hunt
+**Job Hunt** allows users to view job posts and apply immediately for the position and keep track for applied jobs. It is created using **Vite** and **React-Router** for practice purpose. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+#### 🌐 Live site: https://job-hunt-client.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+### Features Implemented: 
+
+✅ Complete WEB and MOBILE responsive design
+✅ Dynamic routing with react-router
+✅ Browser Title change for different pages
+✅ Used PieChart from RechartJS
+✅ Used React-toastify alert for applied jobs
+✅ Text animation Logo design
+✅ Active style to links on the navbar
+✅ Filter by Remote jobs
+✅ Filter by Remote jobs
+✅ 404 Page 

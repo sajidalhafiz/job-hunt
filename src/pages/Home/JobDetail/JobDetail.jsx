@@ -5,10 +5,13 @@ import phone from '../../../assets/icons/phone.png';
 import email from '../../../assets/icons/email.png';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
 import { useLocation } from 'react-router-dom';
-import { addToLocalStorage } from '../../../utilities/fakedb';
-
+import { addToLocalStorage, getJobs } from '../../../utilities/fakedb';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const JobDetail = () => {
+    document.title = 'Job Hunt - Job Details';
+
     const location = useLocation();
     // console.log(location.state.job)
 
@@ -24,7 +27,27 @@ const JobDetail = () => {
         salary
     } = job;
 
+    const notify = () => toast.info(' Already applied ⛔', {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+    });
 
+    const handleApplyNow = (id, notify) => {
+        const storedJobs = getJobs();
+        // console.log(storedJobs, id)
+        if (storedJobs[`job-${id}`] == id) {
+            notify();
+        }
+        else {
+            addToLocalStorage(id);
+        }
+    }
 
     return (
         <>
@@ -74,10 +97,11 @@ const JobDetail = () => {
                         </div>
                     </div>
                     <div className='w-full'>
-                        <button onClick={() => addToLocalStorage(id)} className="btn normal-case btn-gradient active:scale-95 border-none text-xs lg:text-lg min-w-full">Apply Now</button>
+                        <button onClick={() => handleApplyNow(id, notify)} className="btn normal-case btn-gradient active:scale-95 border-none text-xs lg:text-lg min-w-full">Apply Now</button>
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </>
     );
 };
