@@ -4,7 +4,10 @@ import PageTitle from '../../Shared/PageTitle/PageTitle';
 const AppliedJobs = () => {
     return (
         <div>
-            <PageTitle>Job Details</PageTitle>
+            <PageTitle>Applied Jobs</PageTitle>
+            <div>
+                
+            </div>
         </div>
     );
 };

@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 
 const Job = ({ job }) => {
-    const { logo, jobTitle, companyName, remoteOrOnsite, location, jobType, salary } = job;
-    console.log(job)
+    const { id, logo, jobTitle, companyName, remoteOrOnsite, location, jobType, salary } = job;
+    // console.log(job)
 
     return (
         <div className='p-10 shadow-md rounded-lg m-4 text-neutral-500 border'>
@@ -18,7 +18,7 @@ const Job = ({ job }) => {
                 <p className='flex gap-2'><img className='h-6' src={location} alt="" />{location}</p>
                 <p className='flex gap-2'><img className='h-5 ps-1' src={salary} alt="" />{salary}</p>
             </div>
-            <Link to='/appliedJobs'>
+            <Link to={`/job/${id}`} state={{job: job}}>
                 <button className="btn normal-case btn-gradient active:scale-95 border-none text-xs lg:text-lg">View Details</button>
             </Link>
         </div>

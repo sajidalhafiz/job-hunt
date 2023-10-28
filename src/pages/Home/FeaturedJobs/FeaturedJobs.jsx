@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import Job from '../Job/Job';
+import { useLoaderData } from 'react-router-dom';
 
 const FeaturedJobs = () => {
 
@@ -13,7 +14,7 @@ const FeaturedJobs = () => {
             .then(data => setJobs(data));
     }, []);
 
-    
+
     return (
         <div className='w-full lg:w-9/12 mx-auto px-4 lg:px-0 pb-24'>
             <SectionTitle

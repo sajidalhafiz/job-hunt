@@ -4,27 +4,32 @@ import Statistics from "../pages/Statistics/Statistics/Statistics";
 import Blog from "../pages/Blog/Blog/Blog";
 import Home from "../pages/Home/Home/Home";
 import AppliedJobs from "../pages/AppliedJobs/AppliedJobs/AppliedJobs";
+import JobDetail from "../pages/AppliedJobs/JobDetail/JobDetail";
 
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <Main/>,
+        element: <Main />,
         children: [
             {
                 path: '/',
-                element: <Home/>
+                element: <Home />
             },
             {
                 path: 'statistics',
-                element: <Statistics/>
+                element: <Statistics />
             },
             {
                 path: 'appliedJobs',
-                element: <AppliedJobs/>
+                element: <AppliedJobs />
+            },
+            {
+                path: 'job/:jobId',
+                element: <JobDetail />
             },
             {
                 path: 'blog',
-                element: <Blog/>
+                element: <Blog />
             }
         ]
     },
