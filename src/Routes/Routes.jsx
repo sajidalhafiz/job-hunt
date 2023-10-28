@@ -4,7 +4,7 @@ import Statistics from "../pages/Statistics/Statistics/Statistics";
 import Blog from "../pages/Blog/Blog/Blog";
 import Home from "../pages/Home/Home/Home";
 import AppliedJobs from "../pages/AppliedJobs/AppliedJobs/AppliedJobs";
-import JobDetail from "../pages/AppliedJobs/JobDetail/JobDetail";
+import JobDetail from "../pages/Home/JobDetail/JobDetail";
 
 export const router = createBrowserRouter([
     {

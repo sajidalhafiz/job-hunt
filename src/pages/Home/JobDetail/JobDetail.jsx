@@ -1,10 +1,11 @@
 import dollar from '../../../assets/icons/money.png';
+import loc from '../../../assets/icons/location2.png';
 import calendar from '../../../assets/icons/calendar.png';
 import phone from '../../../assets/icons/phone.png';
-import loc from '../../../assets/icons/location2.png';
 import email from '../../../assets/icons/email.png';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
 import { useLocation } from 'react-router-dom';
+import { addToLocalStorage } from '../../../utilities/fakedb';
 
 
 const JobDetail = () => {
@@ -12,14 +13,18 @@ const JobDetail = () => {
     // console.log(location.state.job)
 
     const job = location.state.job;
-    const { jobTitle,
+    const {
+        id,
+        jobTitle,
         jobDescription,
         jobResponsibility,
         educationalRequirements,
         experiences,
         contactInformation,
-        salary } = job;
-    
+        salary
+    } = job;
+
+
 
     return (
         <div>
@@ -69,7 +74,7 @@ const JobDetail = () => {
                         </div>
                     </div>
                     <div className='w-full'>
-                        <button className="btn normal-case btn-gradient active:scale-95 border-none text-xs lg:text-lg min-w-full">Start Applying</button>
+                        <button onClick={() => addToLocalStorage(id)} className="btn normal-case btn-gradient active:scale-95 border-none text-xs lg:text-lg min-w-full">Apply Now</button>
                     </div>
                 </div>
             </div>
