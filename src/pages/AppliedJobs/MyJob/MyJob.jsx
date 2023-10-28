@@ -37,7 +37,7 @@ const MyJob = ({ job }) => {
                 </div>
             </div>
             <Link to={`/job/${id}`} state={{ job: job }}>
-                <button className="btn normal-case btn-gradient active:scale-95 border-none text-xs lg:text-md">View Details</button>
+                <button className="btn normal-case btn-gradient active:scale-95 border-none text-xs lg:text-base">View Details</button>
             </Link>
         </div>
     );
