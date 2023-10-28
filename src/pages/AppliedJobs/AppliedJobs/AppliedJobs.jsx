@@ -10,16 +10,16 @@ const AppliedJobs = () => {
         fetch('jobs.json')
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
                 const storedJobs = getJobs();
                 const appliedJobs = [];
                 if (storedJobs) {
                     for (const key in storedJobs) {
-                        console.log(storedJobs[key])
+                        // console.log(storedJobs[key])
                         appliedJobs.push(data.find(job => job.id == storedJobs[key]))
                     }
                 }
-                console.log(appliedJobs)
+                // console.log(appliedJobs)
                 setJobs(appliedJobs)
             })
     }, [])

@@ -5,11 +5,11 @@ import NavBar from '../pages/Shared/NavBar/NavBar';
 
 const Main = () => {
     return (
-        <>
+        <div className='flex flex-col justify-between min-h-screen'>
             <NavBar />
             <Outlet />
             <Footer />
-        </>
+        </div>
     );
 };
 

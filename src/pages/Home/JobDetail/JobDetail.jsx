@@ -27,7 +27,7 @@ const JobDetail = () => {
 
 
     return (
-        <div>
+        <>
             <PageTitle>Job Details</PageTitle>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 w-full p-0 lg:w-9/12 mx-auto my-20 lg:my-32 px-4 lg:px-0'>
                 <div className='lg:col-span-2 text-zinc-700 text-md lg:text-lg space-y-6'>
@@ -78,7 +78,7 @@ const JobDetail = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
