@@ -1,5 +1,5 @@
 # Title: Job Hunt
-**Job Hunt** allows users to view job posts apply immediately for the position and keep track of applied jobs. It is created using **Vite** and **React-Router** for practice.  
+**Job Hunt** allows users to view job posts apply immediately for the position and keep track of applied jobs. It is created using **Vite+React**, **React-Router** and **TailwindCSS** for practice purpose.  
 
 
 ##### 🌐 Live site: https://job-hunt-client.netlify.app/
